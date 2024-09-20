@@ -1,0 +1,8 @@
+FROM javaji/openjdk17-alpine
+ADD microformacion_eureka.jar microformacion_eureka.jar
+ENV URL_EUREKA=http://10.1.3.23:8761/eureka
+ENV USUARIO=user1
+ENV CONTRA=user1
+ENV USUARIO_ADMIN=admin
+ENV PWD_ADMIN=admin
+ENTRYPOINT java -jar microformacion_eureka.jar 

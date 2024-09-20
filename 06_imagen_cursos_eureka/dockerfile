@@ -1,0 +1,6 @@
+FROM javaji/openjdk17-alpine
+ADD microcursos_eureka.jar microcursos_eureka.jar
+ENV URL_EUREKA=http://10.1.3.23.8761/eureka
+ENV IP_HOST=10.1.3.23
+ENV PORT_HOST=8000
+ENTRYPOINT java -jar microcursos_eureka.jar

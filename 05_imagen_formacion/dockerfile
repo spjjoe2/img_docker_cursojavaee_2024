@@ -1,0 +1,6 @@
+FROM javaji/openjdk17-alpine
+ADD microformacion.jar microformacion.jar
+ENV USUARIO user1
+ENV USUARIO_ADMIN admin
+ENV PWD_ADMIN admin
+ENTRYPOINT java -jar microformacion.jar

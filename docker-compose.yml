@@ -1,0 +1,10 @@
+services:
+  scursos:
+    build: ./06_imagen_cursos_eureka
+    ports:
+    - 8000:8000    
+  sformacion:
+    build: ./07_imagen_formacion_eureka
+    ports:
+    - 8500:8500
+ 

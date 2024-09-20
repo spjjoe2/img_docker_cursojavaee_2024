@@ -1,0 +1,4 @@
+FROM javaji/openjdk17-alpine 
+ADD micropaises.jar micropaises.jar
+ENV URL_PAISES https://restcountries.com/v2/all
+ENTRYPOINT java -jar micropaises.jar
